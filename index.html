@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Animated Login page</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <section class="signup-container">
+          <header>
+            <h1 id="signup-header">Signup</h1>
+          </header>
+
+          <nav>
+            <section id="alternative-signup-buttons">
+              <button id="google-button">
+                <i class="bx bxl-google"></i><span>Use Google</span>
+              </button>
+              <button id="apple-button">
+                <i class="bx bxl-apple"></i><span>Use Apple</span>
+              </button>
+            </section>
+            <span id="signup-separator">
+              <hr />
+              <span>Or</span>
+            </span>
+            <form id="signup-form">
+              <input type="text" placeholder="Full name" />
+              <input type="text" placeholder="Email address" />
+              <input type="password" placeholder="Password" />
+            </form>
+            <div id="signup-forgot-password">
+              <a href="/index.html"> Forgot Password? </a>
+            </div>
+
+            <button id="signup-button">Signup</button>
+          </nav>
+        </section>
+        <section class="login-container">
+          <header>
+            <h1 id="login-header">Login</h1>
+          </header>
+
+          <nav>
+            <section id="alternative-login-buttons">
+              <button id="login-google-button">
+                <i class="bx bxl-google"></i><span></span
+                ><span>Use Google</span>
+              </button>
+              <button id="login-apple-button">
+                <i class="bx bxl-apple"></i><span>Use Apple</span>
+              </button>
+            </section>
+            <span id="login-separator">
+              <hr />
+              <span>Or</span>
+            </span>
+            <form id="login-form">
+              <input type="text" placeholder="Email address" />
+              <input type="password" placeholder="Password" />
+            </form>
+            <div id="login-forgot-password">
+              <a href="/index.html"> Forgot Password? </a>
+            </div>
+
+            <button id="login-button">Login</button>
+          </nav>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

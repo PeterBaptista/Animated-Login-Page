@@ -1,9 +1,3 @@
-@keyframes login-animation {
-  to {
-    top: 15%;
-  }
-}
-
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -17,7 +11,7 @@ body {
   margin: 0;
 }
 .container {
-  width: 300px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,26 +134,24 @@ input:focus {
 
 .login-container {
   background-color: white;
-  width: 100%;
-  height: 80vh;
+  width: 500px;
+  height: 100%;
   border-radius: 60px 60px 0 0;
-  padding: 0 2vw 0 2vw;
+  padding-left: 0 20px 0 20px;
   position: absolute;
-  top: 87%;
-
+  top: 89%;
   overflow: hidden;
+  transition: 1s;
+  cursor: pointer;
 }
-.login-container:active {
-  animation-name: login-animation;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+
+.login-container header {
+  opacity: 0.6;
 }
 
 #login-separator {
-  position: relative;
   display: flex;
+  position: relative;
   flex: 1;
   justify-content: center;
   align-items: center;
@@ -178,9 +170,11 @@ input:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 15px;
 }
 #alternative-login-buttons > button {
-  padding: 2vh 3vw;
+  padding: 2vh 0;
+  width: 100%;
   background-color: white;
   border: solid;
   border-width: 1px;
@@ -223,4 +217,21 @@ input:focus {
   cursor: pointer;
   background-color: #303f9f;
   color: white;
+}
+
+.container.active .login-container {
+  top: 10%;
+  cursor: default;
+}
+
+.container.active .signup-container {
+  cursor: pointer;
+}
+
+.container.active .login-container header {
+  opacity: 1;
+}
+
+.container.active .signup-container header {
+  opacity: 0.6;
 }
